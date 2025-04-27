@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "swiper": "^11.2.6"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
