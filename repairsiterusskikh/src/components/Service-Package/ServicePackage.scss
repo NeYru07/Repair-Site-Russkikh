@@ -1,0 +1,71 @@
+@mixin romb{
+	width: 1.125rem;
+	height: 1.125rem;
+	margin-top: 0.25rem;
+}
+
+.serviceBlock{
+	width: 120rem;
+	height: 11.125rem;
+	color: #0a0a0a;
+	position: relative;
+
+	span{
+		width: fit-content;
+		height: 1.125rem;
+		position: absolute;
+		top: 3.75rem;
+		left: 3.125rem;
+		display: flex;
+		gap: 1.125rem;
+
+		svg{
+			@include romb;
+		}
+
+	}
+	
+	p{
+		width: fit-content;
+		height: 1.125rem;
+		font-weight: 400;
+		font-size: 1.125rem;
+		line-height: 130%;
+		color: #0a0a0a;
+	}
+	
+	h2{
+		width: 28.4375rem;
+		height: fit-content;
+		font-weight: 400;
+		font-size: 1.875rem;
+		line-height: 120%;
+		letter-spacing: -1%;
+		color: #0a0a0a;
+		position: absolute;
+		top: 3.75rem;
+		left: 31.5625rem;
+	}
+
+	.price{
+		position: absolute;
+		top: 3.75rem;
+		left: 88.4375rem;
+	}
+
+	a{
+		position: absolute;
+		top: 3.875rem;
+		left: 110.75rem;
+		font-weight: 400;
+		font-size: 1.125rem;
+		line-height: 130%;
+		color: #848386;
+	}
+
+	.LineBottom{
+		position: absolute;
+		top: 11.125rem;
+		left: 0;
+	}
+}

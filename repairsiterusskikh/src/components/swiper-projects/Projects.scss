@@ -1,0 +1,115 @@
+@mixin romb{
+	width: 1.125rem;
+	height: 1.125rem;
+	margin-top: 0.25rem;
+}
+
+.projectBlock{
+	width: 120rem;
+	height: 33.75rem;
+	display: flex;
+	padding: 3.75rem 3.125rem;
+	position: relative;
+
+	.topLine{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.inline-block{
+		width: 113.75rem;
+		height: 26.25rem;
+		display: flex;
+		gap: 0;
+
+		.textBlock{
+			width: 56.875rem;
+			height: 26.25rem;
+			display: flex;
+			flex-direction: column;
+			gap: 3.75rem;
+
+			span{
+				width: fit-content;
+				height: 1.125rem;
+				display: flex;
+				gap: 1.125rem;
+		
+				svg{
+					@include romb;
+				}
+		
+				p{
+					width: fit-content;
+					height: 1.125rem;
+					font-weight: 400;
+					font-size: 1.125rem;
+					line-height: 130%;
+					color: #0a0a0a;
+				}
+			}
+
+			h2{
+				font-weight: 400;
+				font-size: 1.875rem;
+				width: 26.4375rem;
+				line-height: 120%;
+				letter-spacing: -0.0625rem;
+				color: #0a0a0a;
+			}
+
+			.price{
+				font-weight: 400;
+				font-size: 1.125rem;
+				line-height: 130%;
+				color: #0a0a0a;
+			}
+		}
+
+		.Swiper{
+			width: 56.875rem;
+			height: 26.25rem;
+
+			img{
+				width: 56.875rem;
+				height: 26.25rem;
+				object-fit: contain;
+			}
+
+			.swiper-pagination-bullet{
+				border-radius: 0;
+				transform: rotate(45deg);
+				background: var(--swiper-pagination-bullet-inactive-color, #FFFBFC);
+				width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 0.5rem));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 0.5rem));
+			}
+		}
+	}
+
+	.LineBottom{
+		position: absolute;
+		top: 33.75rem;
+		left: 0;
+	}
+}
+
+:root {
+	--swiper-theme-color: #FFFBFC !important;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+	left: 1.875rem;
+	bottom: 1.875rem;
+	width: fit-content !important;
+	gap: 0.4125rem;
+	display: flex;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+	bottom: 1.875rem;
+}
+
+// .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+
+// }

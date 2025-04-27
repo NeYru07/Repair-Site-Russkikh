@@ -1,0 +1,67 @@
+.serviceBlock {
+  width: 120rem;
+  height: 11.125rem;
+  color: #0a0a0a;
+  position: relative;
+}
+.serviceBlock span {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 1.125rem;
+  position: absolute;
+  top: 3.75rem;
+  left: 3.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.125rem;
+}
+.serviceBlock span svg {
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-top: 0.25rem;
+}
+.serviceBlock p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 1.125rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 130%;
+  color: #0a0a0a;
+}
+.serviceBlock h2 {
+  width: 28.4375rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 120%;
+  letter-spacing: -1%;
+  color: #0a0a0a;
+  position: absolute;
+  top: 3.75rem;
+  left: 31.5625rem;
+}
+.serviceBlock .price {
+  position: absolute;
+  top: 3.75rem;
+  left: 88.4375rem;
+}
+.serviceBlock a {
+  position: absolute;
+  top: 3.875rem;
+  left: 110.75rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 130%;
+  color: #848386;
+}
+.serviceBlock .LineBottom {
+  position: absolute;
+  top: 11.125rem;
+  left: 0;
+}

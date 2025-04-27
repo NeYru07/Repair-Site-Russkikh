@@ -1,0 +1,89 @@
+header {
+  width: 120rem;
+  height: 8.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.3125rem 3.125rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 999;
+}
+header svg {
+  width: 9.5625rem;
+  height: 3.1875rem;
+}
+header nav {
+  width: 32.4rem;
+  height: 0.8125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.875rem;
+  margin-top: 1.6875rem;
+}
+header nav a {
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: #FFFBFC;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-weight: 400;
+  vertical-align: text-top;
+  line-height: 130%;
+  letter-spacing: 0;
+}
+header p {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 1.6875rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  -webkit-text-decoration: underline 0.0313rem;
+          text-decoration: underline 0.0313rem;
+  color: #FFFBFC;
+  text-underline-offset: 0.125rem;
+}
+header .application {
+  font-size: 1.125rem;
+  text-decoration: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-weight: 400;
+  vertical-align: text-top;
+  line-height: 130%;
+  letter-spacing: 0;
+  -webkit-text-decoration: underline 0.0313rem;
+          text-decoration: underline 0.0313rem;
+  color: #FFFBFC;
+  text-underline-offset: 0.125rem;
+  margin-top: 1.6875rem;
+}
+header a {
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+}
+header a:hover {
+  color: #848386;
+}
+header a:active {
+  -webkit-transform: scale(0.99);
+      -ms-transform: scale(0.99);
+          transform: scale(0.99);
+  -webkit-transition: 50ms;
+  transition: 50ms;
+  color: #5e5e5e;
+}

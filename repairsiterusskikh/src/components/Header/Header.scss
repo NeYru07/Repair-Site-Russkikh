@@ -1,0 +1,73 @@
+$Milky: #FFFBFC;
+
+header{
+	width: 120rem;
+	height: 8.125rem;
+	display: flex;
+	padding: 0.3125rem 3.125rem;
+	justify-content: space-between;
+	// position: fixed;
+	z-index: 999;
+
+	svg{
+		width: 9.5625rem;
+		height: 3.1875rem;
+	}
+
+	nav{
+		width: 32.4rem;
+		height: 0.8125rem;
+		display: flex;
+		gap: 1.875rem;
+		margin-top: 1.6875rem;
+
+		a{
+			font-size: 1.125rem;
+			text-decoration: none;
+			color: $Milky;
+			width: max-content;
+			height: fit-content;
+			font-weight: 400;
+			vertical-align: text-top;
+			line-height: 130%;
+			letter-spacing: 0;
+		}
+
+	}
+
+	p{
+		width: max-content;
+		height: fit-content;
+		margin-top: 1.6875rem;
+		font-size: 1.125rem;
+		font-weight: 400;
+		text-decoration: underline 0.0313rem;
+		color: $Milky;
+		text-underline-offset: 0.125rem;
+	}
+
+	.application{
+		font-size: 1.125rem;
+		text-decoration: none;
+		width: max-content;
+		height: fit-content;
+		font-weight: 400;
+		vertical-align: text-top;
+		line-height: 130%;
+		letter-spacing: 0;
+		text-decoration: underline 0.0313rem;
+		color: $Milky;
+		text-underline-offset: 0.125rem;
+		margin-top: 1.6875rem;
+	}
+
+	a{transition: 150ms ease-in-out;}
+	a:hover{
+		color: #848386;
+	}
+	a:active{
+		transform: scale(0.99);
+		transition: 50ms;
+		color: #5e5e5e;
+	}
+}
