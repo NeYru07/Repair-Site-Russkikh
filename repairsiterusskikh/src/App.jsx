@@ -284,21 +284,21 @@ function App() {
 		<p className='pol'>Политика конфиденциальности</p>
 		<p className='date'>©️ 2017 - 2023 Сочи-Ремонт. <br /> Все права защищены. </p>
 		<p className='creator'>Разработано <span>Студией Сайтов</span></p>
-		<div className="links1">
-			<a href="">Все услуги</a>
-			<a href="">Капитальный ремонт</a>
-			<a href="">Офисный ремонт</a>
-			<a href="">Черновой ремонт</a>
-			<a href="">Евроремонт</a>
+		<div className="links1" id='links1'>
+			<a href="#links1">Все услуги</a>
+			<a href="#links1">Капитальный ремонт</a>
+			<a href="#links1">Офисный ремонт</a>
+			<a href="#links1">Черновой ремонт</a>
+			<a href="#links1">Евроремонт</a>
 		</div>
-		<div className="links2">
-			<a href="">Акции</a>
-			<a href="">О нас</a>
-			<a href="">Отзывы</a>
-			<a href="">Вопрос-ответ</a>
-			<a href="">Блог</a>
-			<a href="">Контакты</a>
-			<a href="">Карта сайта</a>
+		<div className="links2" id='links2'>
+			<a href="#links2">Акции</a>
+			<a href="#links2">О нас</a>
+			<a href="#links2">Отзывы</a>
+			<a href="#links2">Вопрос-ответ</a>
+			<a href="#links2">Блог</a>
+			<a href="#links2">Контакты</a>
+			<a href="#links2">Карта сайта</a>
 		</div>
 		<div className="email">
 			<h5>E-mail</h5>
