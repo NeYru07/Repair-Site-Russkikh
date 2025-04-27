@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Repair-Site-Russkikh2/static/css/main.33e6a524.css",
+    "main.js": "/Repair-Site-Russkikh2/static/js/main.c52365af.js",
+    "static/media/block7-bg.png": "/Repair-Site-Russkikh2/static/media/block7-bg.9497f32cf8ca2200b919.png",
+    "static/media/block3-bg.png": "/Repair-Site-Russkikh2/static/media/block3-bg.5bb9f291a1af666f0e93.png",
+    "static/media/backgroundPng.png": "/Repair-Site-Russkikh2/static/media/backgroundPng.057cffcdb754e170828c.png",
+    "index.html": "/Repair-Site-Russkikh2/index.html",
+    "main.33e6a524.css.map": "/Repair-Site-Russkikh2/static/css/main.33e6a524.css.map",
+    "main.c52365af.js.map": "/Repair-Site-Russkikh2/static/js/main.c52365af.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33e6a524.css",
+    "static/js/main.c52365af.js"
+  ]
+}
