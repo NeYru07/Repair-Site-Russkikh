@@ -1,6 +1,6 @@
 import "./Projects.css"
 import Line from "../Line/Line"
-import { Navigation, Pagination, A11y } from 'swiper';
+import { Navigation, Pagination, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 

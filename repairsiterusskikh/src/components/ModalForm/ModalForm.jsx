@@ -45,7 +45,7 @@ export default function ModalForm({ onClose }) {
   const onSubmit = (data) => {
     console.log('Форма отправлена:', data);
     onClose();
-	 navigate('./success');
+	 navigate('/success');
   };
 
   // Автоматическое добавление +7 для телефона

@@ -4,15 +4,18 @@ import Line from './components/Line/Line'
 import ServicePackage from './components/Service-Package/ServicePackage'
 import WorksFilter from './components/WorksFilter/WorksFilter'
 import CustomSwiper from './components/CustomSwiper/CustomSwiper'
+import { Routes, Route } from 'react-router-dom';
+import SuccessPage from './pages/SuccessPage/SuccessPage';
 import './App.css'
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
+// import 'swiper/css/scrollbar';
 
 function App() {
   return (
     <>
+	 
       <div className="block-1">
 			<Header />
 			<h1>Ремонт и <br /> отделка в Сочи</h1>
@@ -236,8 +239,21 @@ function App() {
 		</div>
 		<Button>Обратный звонок</Button>
 		</footer>
+
+		<Routes>
+        <Route path="/" element={<App />} />  // Главная страница
+        <Route path="/success" element={<SuccessPage />} />  // Страница успеха
+   	</Routes>
     </>
   )
 }
+
+// function MainContent() {
+// 	return (
+// 	  <>
+// 		 <h1>Test</h1>
+// 	  </>
+// 	);
+//  }
 
 export default App
