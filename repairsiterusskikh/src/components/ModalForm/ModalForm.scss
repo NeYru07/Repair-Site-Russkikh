@@ -1,0 +1,190 @@
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+ }
+ 
+ .modal-container {
+	background: white;
+	border-radius: 0.5rem;
+	width: 63.75rem;
+	height: 40.8125rem;
+	position: relative;
+	box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.15);
+ }
+ 
+ .close-button {
+	position: absolute;
+	top: 3.75rem;
+	right: 3.75rem;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0.5rem;
+ }
+
+ svg{
+	width: 2.25rem;
+	height: 2.25rem;
+}
+
+Line{
+	width: 100%;
+	margin-bottom: 3.75rem;
+}
+ 
+ .h2Modal {
+	position: absolute;
+	top: 2.5rem;
+	left: 3.75rem;
+	width: fit-content;
+	height: fit-content;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 130%;
+	letter-spacing: -0.125rem;
+	color: #40362E;
+ }
+
+ input, select{
+	height: 4.5625rem;
+	border: 0.0625rem solid #84838666;
+	border-radius: 0.1875rem;
+	padding: 1.875rem;
+	font-weight: 400;
+	font-size: 1.125rem;
+	line-height: 130%;
+	color: #0a0a0a;
+	transition: 222ms ease-in-out;
+}
+
+.Gap{
+	display: flex;
+	flex-direction: column;
+	gap: 0.9375rem;
+	position: absolute;
+	height: 6.3125rem;
+}
+
+.firstName{
+	width: 12.5rem;
+	top: 14.125rem;
+	left: 3.75rem;
+}
+.lastName{
+	width: 12.5rem;
+	top: 14.125rem;
+	left: 17.8125rem;
+}
+
+.Email{
+	top: 14.125rem;
+	left: 33.4375rem;
+	width: 26.5625rem;
+}
+
+.phoneNumber{
+	top: 22.4375rem;
+	left: 3.75rem;
+	width: 26.5625rem;
+
+	input{
+		color: #0a0a0a66;
+
+		&:focus{
+			color: #0a0a0a;
+		}
+	}
+}
+
+.form-group{
+	top: 22.4375rem;
+	left: 33.4375rem;
+	width: 26.5625rem;
+	
+	select{
+		padding: 0;
+		min-height: 4.5625rem;
+		padding-left: 1.875rem;
+
+		option{
+			font-size: 1.125rem;
+			line-height: 130%;
+			color: #0a0a0a;
+		}
+	}
+}
+
+label{
+	color: #0a0a0a66;
+}
+ 
+ input:focus, select:focus {
+	outline: none;
+	border-color: #40362E;
+ }
+ 
+ .service-select {
+	appearance: none;
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 1rem center;
+	background-size: 1rem;
+ }
+ 
+ .consent-text {
+	position: absolute;
+	top: 33.6875rem;
+	left: 3.75rem;
+	width: 25.3125rem;
+	font-size: 1.125rem;
+	color: #0A0A0A66;
+	line-height: 130%;
+ }
+ 
+ .submit-button {
+	position: absolute;
+	top: 32.5rem;
+	left: 33.4375rem;
+	width: 26.5625rem;
+	height: 4.5625rem;
+	background: #FFFBFC;
+	color: #848386;
+	border: 0.0625rem solid #848386;
+	border-radius: 62.4375rem;
+	font-size: 1.125rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: 200ms ease-in-out;
+ }
+ 
+ .submit-button:hover {
+	background: #0a0a0a;
+	color: #FFFBFC;
+	border-color: #FFFBFC;
+ }
+
+
+.error {
+	border-color: #ff4d4f !important;
+ }
+ 
+ .error-message {
+	color: #ff4d4f;
+	font-size: 0.75rem !important;
+	margin-top: -0.75rem !important;
+	display: block;
+	height: 1rem;
+ }
+
+ /* Фикс для отступов при ошибках */
+ .Gap:has(.error-message) {
+	margin-bottom: 0.3125rem;
+ }

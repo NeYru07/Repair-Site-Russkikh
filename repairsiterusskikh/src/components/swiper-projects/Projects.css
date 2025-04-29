@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .projectBlock {
   width: 120rem;
   height: 33.75rem;
@@ -87,8 +88,8 @@
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   background: var(--swiper-pagination-bullet-inactive-color, #FFFBFC);
-  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 0.5rem));
-  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 0.5rem));
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 0.6rem));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 0.6rem));
 }
 .projectBlock .LineBottom {
   position: absolute;
@@ -96,16 +97,14 @@
   left: 0;
 }
 
-:root {
-  --swiper-theme-color: #FFFBFC !important;
-}
-
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-  left: 1.875rem;
-  bottom: 1.875rem;
+  position: absolute !important;
+  top: 24rem !important;
+  left: 1.875rem !important;
   width: -webkit-fit-content !important;
   width: -moz-fit-content !important;
   width: fit-content !important;
+  height: 1.125rem !important;
   gap: 0.4125rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,4 +113,55 @@
 
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 1.875rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute !important;
+  top: 50% !important;
+  -webkit-transform: translateY(-50%) !important;
+      -ms-transform: translateY(-50%) !important;
+          transform: translateY(-50%) !important;
+  width: 3.375rem !important;
+  height: 3.375rem !important;
+  background: #FFFBFC !important;
+  border-radius: 62.4375rem !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.swiper-button-next {
+  right: 1.875rem !important;
+  top: 24.5rem !important;
+  left: auto !important;
+}
+
+.swiper-button-prev {
+  left: 47.3125rem !important;
+  top: 24.5rem !important;
+  right: auto !important;
+}
+
+/* Иконки */
+.swiper-button-next::after {
+  content: "" !important;
+  background: url(../../../public/svg/Arrow-right.svg) center/contain no-repeat !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+
+.swiper-button-prev::after {
+  content: "" !important;
+  background: url(../../../public/svg/Arrow-left.svg) center/contain no-repeat !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
 }

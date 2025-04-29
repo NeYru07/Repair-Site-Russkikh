@@ -1,0 +1,83 @@
+ .switch-buttons{
+	display: flex;
+	position: absolute;
+	top: 42.25rem;
+	left: 3.125rem;
+	width: 10.0625rem;
+	height: 4.5625rem;
+	gap: 0.9375rem;
+
+	button{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 4.5625rem;
+		height: 4.5625rem;
+		border-radius: 6.25rem;
+		border: solid 0.0625rem #848386;
+		background-color: $Milky;
+		cursor: pointer;
+
+		svg{
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+	}
+
+	button:hover{
+		background-color: #f0ebeb;
+	}
+
+	button:active{
+		transform: scale(0.989);
+	}
+}
+
+.work{
+	width: fit-content;
+	height: 33.9375rem;
+	display: flex;
+	gap: 2.5rem;
+	position: absolute;
+	top: 15.5625rem;
+	left: 31.5625rem;
+
+	.types-of-works{
+		width: 26.75rem;
+		height: 33.9375rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1.875rem;
+
+		img{
+			width: 26.75rem !important;
+			height: 31.25rem !important;
+			object-fit: cover;
+		}
+
+		p{
+			width: fit-content;
+			height: 0.8125rem;
+			font-weight: 400;
+			font-size: 1.125rem;
+			line-height: 130%;
+			color: $Jumbo;
+			text-decoration: underline 0.0125rem;
+			text-decoration-color: $Jumbo;
+		}
+	}
+}
+
+/* Анимация переключения фильтров */
+.types-of-works {
+	transition: filter 0.5s ease, opacity 0.5s ease;
+ }
+ 
+ /* Дополнительные стили для кнопок наведения */
+ .switch-left:hover, .switch-right:hover {
+	background-color: #f0f0f0;
+ }
+ 
+ .switch-left:active, .switch-right:active {
+	transform: scale(0.95);
+ }

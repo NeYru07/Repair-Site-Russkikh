@@ -1,6 +1,12 @@
 {
   "dependencies": {
-    "swiper": "^11.2.6"
+    "@hookform/resolvers": "^5.0.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.56.1",
+    "swiper": "^11.2.6",
+    "swiper-react": "^1.0.0",
+    "zod": "^3.24.3"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"

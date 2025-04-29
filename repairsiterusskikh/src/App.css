@@ -1,9 +1,9 @@
+@charset "UTF-8";
 .block-1 {
   width: 120rem;
   height: 62.5rem;
   background-image: url(../public/images/backgroundPng.png);
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -68,6 +68,8 @@
   width: 120rem;
   height: 61.5625rem;
   position: relative;
+  /* Анимация переключения фильтров */
+  /* Дополнительные стили для кнопок наведения */
 }
 .block-2 h1 {
   position: absolute;
@@ -191,6 +193,20 @@
           text-decoration: underline 0.0125rem;
   text-decoration-color: #848386;
 }
+.block-2 .types-of-works {
+  -webkit-transition: opacity 0.5s ease, -webkit-filter 0.5s ease;
+  transition: opacity 0.5s ease, -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease, opacity 0.5s ease;
+  transition: filter 0.5s ease, opacity 0.5s ease, -webkit-filter 0.5s ease;
+}
+.block-2 .switch-left:hover, .block-2 .switch-right:hover {
+  background-color: #f0f0f0;
+}
+.block-2 .switch-left:active, .block-2 .switch-right:active {
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+}
 .block-2 .Line-2 {
   position: absolute;
   top: 53.25rem;
@@ -211,7 +227,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 .block-3 h1 {
   position: absolute;
@@ -391,7 +406,9 @@
 
 .block-6 {
   width: 120rem;
-  height: 87.625rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,6 +417,17 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 3.75rem;
+}
+.block-6 .Swiper {
+  position: relative;
+  width: 120rem;
+  height: 67.5rem;
+}
+.block-6 .Swiper .swiper-button-next[swiper-wrapper-7114a6d2a6b12835] {
+  position: absolute !important;
+  top: 12.5rem !important;
+  left: 12.5rem !important;
+  background-color: #0a0a0a;
 }
 .block-6 h1 {
   width: 56.875rem;
@@ -411,7 +439,7 @@
   -ms-flex-item-align: center;
       align-self: center;
 }
-.block-6 Button {
+.block-6 Button:nth-child(3) {
   border: 0.0625rem solid #848386;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -425,7 +453,6 @@
   background-image: url(../public/images/block7-bg.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
 }
 .block-7 h1 {
   width: 56.875rem;
@@ -485,12 +512,24 @@
   top: 54.8125rem;
   left: 57.6875rem;
   cursor: pointer;
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
 }
 .block-7 .btnUp svg {
   width: 1.5rem;
   height: 1.5rem;
 }
-.block-7 Button {
+.block-7 .btnUp:hover {
+  background-color: #c6c6c7;
+}
+.block-7 .btnUp:active {
+  -webkit-transform: scale(0.98);
+      -ms-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-transition: 50ms;
+  transition: 50ms;
+}
+.block-7 Button:nth-child(4) {
   position: absolute;
   top: 54.8125rem;
   left: 88.4375rem;
@@ -586,7 +625,7 @@
   gap: 2.5rem;
 }
 .block-8 .our-services .flex-box .span-gap {
-  width: 360px;
+  width: 22.5rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -680,12 +719,30 @@ footer .links1, footer .links2 {
   gap: 3.125rem;
 }
 footer .links1 a, footer .links2 a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-weight: 400;
   font-size: 1.875rem;
   line-height: 120%;
   letter-spacing: -0.0625rem;
   text-decoration: none;
   color: #0a0a0a;
+  position: relative;
+}
+footer .links1 a:hover::after, footer .links2 a:hover::after {
+  width: 100%;
+}
+footer .links1 a::after, footer .links2 a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.125rem;
+  background: #000;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
 }
 footer .links1 {
   position: absolute;
@@ -750,7 +807,7 @@ footer .icons svg {
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
 }
-footer Button {
+footer Button:nth-child(10) {
   position: absolute;
   top: 28.8125rem;
   left: 88.4375rem;

@@ -1,23 +1,16 @@
-// import { useState } from 'react'
 import Header from './components/Header/Header'
 import Button from './components/Button/Button'
 import Line from './components/Line/Line'
 import ServicePackage from './components/Service-Package/ServicePackage'
-import Projects from './components/swiper-projects/Projects'
+import WorksFilter from './components/WorksFilter/WorksFilter'
+import CustomSwiper from './components/CustomSwiper/CustomSwiper'
 import './App.css'
-
-import { Navigation, Pagination, A11y } from 'swiper/modules';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 function App() {
-
   return (
     <>
       <div className="block-1">
@@ -44,32 +37,7 @@ function App() {
 				</svg>
 				<p>Виды работ</p>
 			</span>
-			<div className="switch-buttons">
-				<button className='switch-left'>
-					<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M8.328 11.5L13.692 6.13605L12.278 4.72205L4.5 12.5L12.278 20.278L13.692 18.864L8.328 13.5H20.5V11.5H8.328Z" fill="#848386"/>
-					</svg>
-				</button>
-				<button className='switch-right'>
-					<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M16.672 11.5L11.308 6.13605L12.722 4.72205L20.5 12.5L12.722 20.278L11.308 18.864L16.672 13.5H4.5V11.5H16.672Z" fill="#848386"/>
-					</svg>
-				</button>
-			</div>
-			<div className="work">
-				<div className="types-of-works">
-					<img src="./images/capitalRepair.png" alt="" />
-					<p>Капитальный ремонт</p>
-				</div>
-				<div className="types-of-works">
-					<img src="./images/officeRepair.png" alt="" />
-					<p>Офисный ремонт</p>
-				</div>
-				<div className="types-of-works">
-					<img src="./images/blackRepair.png" alt="" />
-					<p>Черновой ремонт</p>
-				</div>
-			</div>
+			<WorksFilter></WorksFilter>
 			<Line className="Line-2" />
 			<Button className='Button'>Заказать ремонт</Button>
 		</div>
@@ -123,73 +91,7 @@ function App() {
 		<div className="block-6">
 			<h1>Наши проекты, выполненные за 10 лет работы</h1>
 			
-			<Swiper className="Swiper"
-					// install Swiper modules
-					modules={[Navigation, A11y]}
-					spaceBetween={50}
-					slidesPerView={1}
-					navigation
-					loop={true}
-					onSwiper={(swiper) => console.log(swiper)}
-					onSlideChange={() => console.log('slide change')}
-				 >
-					<SwiperSlide>
-						<Projects
-				forWhat="Квартира"
-				discript="32,3 м2, Дизайнерский ремонт, отельная отделка"
-				price="234.000 ₽"
-				png="./images/project1.png"
-			></Projects>
-			<Projects
-				forWhat="Квартира"
-				discript="127,7 м2, Премиум ремонт, деревянная отделка"
-				price="1.324.000 ₽"
-				png="./images/project2.png"
-			></Projects>
-			</SwiperSlide>
-					<SwiperSlide>
-					<Projects
-				forWhat="Квартира"
-				discript="32,3 м2, Дизайнерский ремонт, отельная отделка"
-				price="234.000 ₽"
-				png="./images/project1.png"
-			></Projects>
-			<Projects
-				forWhat="Квартира"
-				discript="127,7 м2, Премиум ремонт, деревянная отделка"
-				price="1.324.000 ₽"
-				png="./images/project2.png"
-			></Projects>
-					</SwiperSlide>
-					<SwiperSlide>
-					<Projects
-				forWhat="Квартира"
-				discript="32,3 м2, Дизайнерский ремонт, отельная отделка"
-				price="234.000 ₽"
-				png="./images/project1.png"
-			></Projects>
-			<Projects
-				forWhat="Квартира"
-				discript="127,7 м2, Премиум ремонт, деревянная отделка"
-				price="1.324.000 ₽"
-				png="./images/project2.png"
-			></Projects>
-					</SwiperSlide>
-					<SwiperSlide>
-					<Projects
-				forWhat="Квартира"
-				discript="32,3 м2, Дизайнерский ремонт, отельная отделка"
-				price="234.000 ₽"
-				png="images/project1.png"
-			></Projects>
-			<Projects
-				forWhat="Квартира"
-				discript="127,7 м2, Премиум ремонт, деревянная отделка"
-				price="1.324.000 ₽"
-				png="images/project2.png"
-			></Projects>
-					</SwiperSlide>
-			</Swiper>
+			<CustomSwiper></CustomSwiper>
 			<Button>Все проекты</Button>
 		</div>
 

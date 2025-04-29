@@ -75,6 +75,7 @@ header .application {
 header a {
   -webkit-transition: 150ms ease-in-out;
   transition: 150ms ease-in-out;
+  cursor: pointer;
 }
 header a:hover {
   color: #848386;

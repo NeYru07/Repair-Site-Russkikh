@@ -1,10 +1,9 @@
 import "./Projects.css"
 import Line from "../Line/Line"
-import { Navigation, Pagination, A11y } from 'swiper/modules';
-
+import { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -32,8 +31,8 @@ export default function Projects({ forWhat, discript, price, png }) {
 					navigation
 					loop={true}
 					pagination={{ clickable: true }}
-					onSwiper={(swiper) => console.log(swiper)}
-					onSlideChange={() => console.log('slide change')}
+					// onSwiper={(swiper) => console.log(swiper)}
+					// onSlideChange={() => console.log('slide change')}
 				 >
 					<SwiperSlide><img src={png} alt="" /></SwiperSlide>
 					<SwiperSlide><img src={png} alt="" /></SwiperSlide>

@@ -1,5 +1,10 @@
 import './Header.css'
+import React, { useState } from 'react';
+import ModalForm from '../ModalForm/ModalForm';
+
 export default function Header() {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+
 	return(
 		<header>
 			<svg width="153" height="51" viewBox="0 0 153 51" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,7 +28,8 @@ export default function Header() {
 				<a href="">Контакты</a>
 			</nav>
 			<p>+7 (931) 724 09 42</p>
-			<a className='application' href="">Оформить заявку</a>
+			<a className='application' onClick={() => setIsModalOpen(true)}>Оформить заявку</a>
+			{isModalOpen && <ModalForm onClose={() => setIsModalOpen(false)} />}
 		</header>
 	)	
 }
