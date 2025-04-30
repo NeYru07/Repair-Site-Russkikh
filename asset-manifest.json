@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/Repair-Site-Russkikh2/static/css/main.33e6a524.css",
-    "main.js": "/Repair-Site-Russkikh2/static/js/main.c52365af.js",
+    "main.css": "/Repair-Site-Russkikh2/static/css/main.319a53f0.css",
+    "main.js": "/Repair-Site-Russkikh2/static/js/main.932b6f82.js",
     "static/media/block7-bg.png": "/Repair-Site-Russkikh2/static/media/block7-bg.9497f32cf8ca2200b919.png",
     "static/media/block3-bg.png": "/Repair-Site-Russkikh2/static/media/block3-bg.5bb9f291a1af666f0e93.png",
     "static/media/backgroundPng.png": "/Repair-Site-Russkikh2/static/media/backgroundPng.057cffcdb754e170828c.png",
     "index.html": "/Repair-Site-Russkikh2/index.html",
-    "main.33e6a524.css.map": "/Repair-Site-Russkikh2/static/css/main.33e6a524.css.map",
-    "main.c52365af.js.map": "/Repair-Site-Russkikh2/static/js/main.c52365af.js.map"
+    "static/media/Arrow-right.svg": "/Repair-Site-Russkikh2/static/media/Arrow-right.910676f1cc24993c96de.svg",
+    "static/media/Arrow-left.svg": "/Repair-Site-Russkikh2/static/media/Arrow-left.f7e0114790a1922749e4.svg",
+    "main.319a53f0.css.map": "/Repair-Site-Russkikh2/static/css/main.319a53f0.css.map",
+    "main.932b6f82.js.map": "/Repair-Site-Russkikh2/static/js/main.932b6f82.js.map"
   },
   "entrypoints": [
-    "static/css/main.33e6a524.css",
-    "static/js/main.c52365af.js"
+    "static/css/main.319a53f0.css",
+    "static/js/main.932b6f82.js"
   ]
 }
