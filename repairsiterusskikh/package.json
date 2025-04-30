@@ -1,7 +1,7 @@
 {
   "name": "repairsiterusskikh",
   "version": "0.1.0",
-  "homepage": "https://neyru07.github.io/Repair-Site-Russkikh2",
+  "homepage": "https://neyru07.github.io/Repair-Site-Russkikh/",
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
