@@ -4,8 +4,8 @@ import Line from './components/Line/Line'
 import ServicePackage from './components/Service-Package/ServicePackage'
 import WorksFilter from './components/WorksFilter/WorksFilter'
 import CustomSwiper from './components/CustomSwiper/CustomSwiper'
-import { Routes, Route } from 'react-router-dom';
-import SuccessPage from './pages/SuccessPage/SuccessPage';
+// import { Routes, Route } from 'react-router-dom';
+// import SuccessPage from './pages/SuccessPage/SuccessPage';
 import './App.css'
 // import 'swiper/css';
 // import 'swiper/css/navigation';
@@ -240,10 +240,10 @@ function App() {
 		<Button>Обратный звонок</Button>
 		</footer>
 
-		<Routes>
+		{/* <Routes>
         <Route path="/" element={<App />} />  // Главная страница
         <Route path="/success" element={<SuccessPage />} />  // Страница успеха
-   	</Routes>
+   	</Routes> */}
     </>
   )
 }

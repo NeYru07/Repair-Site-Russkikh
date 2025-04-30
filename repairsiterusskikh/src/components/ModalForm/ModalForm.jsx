@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import Line from '../Line/Line';
@@ -26,7 +26,7 @@ const formSchema = z.object({
 });
 
 export default function ModalForm({ onClose }) {
-	const navigate = useNavigate();
+	// const navigate = useNavigate();
 
   const {
     register,
@@ -45,7 +45,7 @@ export default function ModalForm({ onClose }) {
   const onSubmit = (data) => {
     console.log('Форма отправлена:', data);
     onClose();
-	 navigate('/success');
+	//  navigate('/success');
   };
 
   // Автоматическое добавление +7 для телефона
